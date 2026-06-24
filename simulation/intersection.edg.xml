@@ -1,0 +1,11 @@
+<edges>
+    <edge id="edge_N_0" from="node_N" to="junction_center" numLanes="2" speed="13.89"/>
+    <edge id="edge_S_0" from="node_S" to="junction_center" numLanes="2" speed="13.89"/>
+    <edge id="edge_E_0" from="node_E" to="junction_center" numLanes="2" speed="13.89"/>
+    <edge id="edge_W_0" from="node_W" to="junction_center" numLanes="2" speed="13.89"/>
+
+    <edge id="edge_N_1" from="junction_center" to="node_N" numLanes="2" speed="13.89"/>
+    <edge id="edge_S_1" from="junction_center" to="node_S" numLanes="2" speed="13.89"/>
+    <edge id="edge_E_1" from="junction_center" to="node_E" numLanes="2" speed="13.89"/>
+    <edge id="edge_W_1" from="junction_center" to="node_W" numLanes="2" speed="13.89"/>
+</edges>

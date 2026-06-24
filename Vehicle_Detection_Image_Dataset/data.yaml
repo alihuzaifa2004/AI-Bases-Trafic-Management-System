@@ -1,0 +1,7 @@
+path: E:/University All Semester Material/Spring 7th semester/AI theory/ITMS-Project/Vehicle_Detection_Image_Dataset
+train: train/images
+val: valid/images
+
+# Classes mapping (Adjust names to match your exact dataset configuration if different)
+nc: 5
+names: ['car', 'motorcycle', 'bus', 'truck', 'emergency']

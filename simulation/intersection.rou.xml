@@ -1,0 +1,11 @@
+<routes>
+    <vType id="car" vClass="passenger" length="4.5" color="1,0,0" maxSpeed="13.89"/> <vType id="bus" vClass="bus" length="12.0" color="1,0.6,0" maxSpeed="11.11"/>   <vType id="van" vClass="delivery" length="5.0" color="0.7,0.7,0.7" maxSpeed="12.5"/> <route id="route_N_S" edges="edge_N_0 edge_S_1"/>
+    <route id="route_S_N" edges="edge_S_0 edge_N_1"/>
+    <route id="route_E_W" edges="edge_E_0 edge_W_1"/>
+    <route id="route_W_E" edges="edge_W_0 edge_E_1"/>
+
+    <flow id="flow_N" type="car" route="route_N_S" begin="0" end="500" period="exp(4)" departLane="random"/>
+    <flow id="flow_S" type="bus" route="route_S_N" begin="0" end="500" period="exp(10)" departLane="random"/>
+    <flow id="flow_E" type="van" route="route_E_W" begin="0" end="500" period="exp(6)" departLane="random"/>
+    <flow id="flow_W" type="car" route="route_W_E" begin="0" end="500" period="exp(5)" departLane="random"/>
+</routes>

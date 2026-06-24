@@ -1,0 +1,6 @@
+<connections>
+    <connection from="edge_N_0" to="edge_S_1" fromLane="0" toLane="0"/>
+    <connection from="edge_E_0" to="edge_W_1" fromLane="0" toLane="0"/>
+    <connection from="edge_S_0" to="edge_N_1" fromLane="0" toLane="0"/>
+    <connection from="edge_W_0" to="edge_E_1" fromLane="0" toLane="0"/>
+</connections>
