@@ -1,10 +1,11 @@
+#importing libraries
 import time
 import numpy as np
 from traffic_detector import TrafficDetector
 from traffic_predictor import PredictorEngine
 from signal_controller import DQNSignalController
 from config import Config
-
+#pipelines main class
 class ITMSPipeline:
     def __init__(self):
         self.detector = TrafficDetector()
