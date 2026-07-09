@@ -7,6 +7,7 @@ import sys
 os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
 torch.classes.__path__ = []
 
+
 import streamlit as st
 import cv2
 import numpy as np
@@ -34,7 +35,8 @@ def load_pipeline():
 
 pipeline = load_pipeline()
 
-# 3. SIDEBAR CONTROLS & SUMO MANAGEMENT
+# 3. SIDEBAR CONTROLS & SUMO MANAGEMENT System
+
 st.sidebar.header("🕹️ Simulation & Core Control Panel")
 sumo_mode = st.sidebar.checkbox("🔌 Enable SUMO TraCI Synchronization", value=False, 
                                  disabled=not SUMO_AVAILABLE,
