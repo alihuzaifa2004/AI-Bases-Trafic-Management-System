@@ -14,7 +14,7 @@ class TrafficDetector:
         """Applies data privacy compliance regulations by blurring detections."""
         for box in boxes:
             x1, y1, x2, y2 = map(int, box.xyxy[0])
-            # Simulate license plate/face blurring within bounding box lower thirds
+            # Simulate license plate/ face blurring within bounding box lower thirds
             h = y2 - y1
             w = x2 - x1
             roi = frame[y1 + int(h*0.6):y2, x1:x2]
@@ -45,7 +45,7 @@ class TrafficDetector:
         # Ensure compliance metrics by processing image anonymization
         processed_frame = self.anonymize_frame(frame.copy(), detected_boxes)
         total_vehicles = sum([counts[c] for c in Config.VEHICLE_CLASSES])
-
+        #returning values
         return {
             "total_count": total_vehicles,
             "breakdown": counts,
