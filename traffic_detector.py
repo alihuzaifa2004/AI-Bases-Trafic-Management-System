@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 from config import Config
-
+#class
 class TrafficDetector:
     def __init__(self):
         # Load lightweight nano model for Edge performance
