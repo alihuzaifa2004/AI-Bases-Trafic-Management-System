@@ -45,7 +45,7 @@ class TrafficDetector:
         # Ensure compliance metrics by processing image anonymization
         processed_frame = self.anonymize_frame(frame.copy(), detected_boxes)
         total_vehicles = sum([counts[c] for c in Config.VEHICLE_CLASSES])
-        #returning values
+        #printed or returned values
         return {
             "total_count": total_vehicles,
             "breakdown": counts,
