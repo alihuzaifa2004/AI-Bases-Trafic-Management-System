@@ -9,7 +9,7 @@ class TrafficDetector:
         # Load lightweight nano model for Edge performance
         self.model = YOLO(Config.YOLO_MODEL_PATH)
         self.model.to(Config.DEVICE)
-        
+        #defining frame
     def anonymize_frame(self, frame, boxes):
         """Applies data privacy compliance regulations by blurring detections."""
         for box in boxes:
