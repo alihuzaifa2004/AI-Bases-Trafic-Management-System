@@ -12,6 +12,8 @@ class TrafficDetector:
         #defining frame
     def anonymize_frame(self, frame, boxes):
         """Applies data privacy compliance regulations by blurring detections."""
+        
+        #using for loop for boxes
         for box in boxes:
             x1, y1, x2, y2 = map(int, box.xyxy[0])
             # Simulate license plate/ face blurring within bounding box lower thirds
